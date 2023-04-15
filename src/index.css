@@ -76,6 +76,9 @@ textarea {
   height: 100vh;
 }
 
+#content {
+  height: 74px;
+}
 
 .new-post {
   margin: 1rem;
