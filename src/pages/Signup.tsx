@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
 function Signup() {
@@ -23,6 +22,8 @@ function Signup() {
     function submitUser() {
       if (username.length >= 3) {
         console.log("User submitted: " + username)
+        // fazer redux guardar o username
+        // fazer paginação para MainScreen
       }
     }
 
@@ -30,7 +31,7 @@ function Signup() {
     <div className="card">
         <h1>Welcome to CodeLeap network!</h1>
         <label>Please enter your username
-            <input type="text" id="username" name="username" required onChange={(e) => setUsername(e.target.value)} />
+            <input placeholder="John Wick" type="text" id="username" name="username" required onChange={(e) => setUsername(e.target.value)} />
         </label>
         <div className="button-container"><button onClick={submitUser}>ENTER</button></div>
     </div>

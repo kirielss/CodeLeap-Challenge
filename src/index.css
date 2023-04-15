@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+#root {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -40,3 +45,48 @@ button {
   background-color: #7695EC;
   cursor: pointer;
 }
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea {
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #858585;
+  display: block;
+  width: 100%;
+  
+}
+
+header {
+  color: white;
+  padding: .2rem 2rem;
+  background-color: #7695EC;
+}
+
+textarea {
+  resize: none;
+}
+
+.MainScreen {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.new-post {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #858585;
+}
+
+@media screen and (min-width: 700px) {
+  .MainScreen {
+    width: 50vw;
+  }
+}
+  
