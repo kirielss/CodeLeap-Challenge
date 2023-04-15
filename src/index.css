@@ -24,7 +24,7 @@ body {
 }
 
 button {
-  background-color: #7695EC;
+  background-color: #858585;
   color: white;
   padding: 0.2rem 2rem;
   border-radius: 0.4rem;
@@ -34,4 +34,9 @@ button {
 .button-container {
   display: flex;
   justify-content: end;
+}
+
+.button-active {
+  background-color: #7695EC;
+  cursor: pointer;
 }
