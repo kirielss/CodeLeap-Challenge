@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import  getContent  from "../actions/GetContent";
 
 function MainScreen() {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
 
+    getContent();
 
     useEffect(() => {
         if (title.length >= 3 && content.length >= 3) {
